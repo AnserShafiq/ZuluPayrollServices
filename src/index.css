@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind component;
+@tailwind utilities;
+
+:root{
+  --dark-blue: #243144;
+  --sky-blue: #F7FBFF;
+  --dark-red:#8E1313;
+}
+
+body {
+  margin: 0;
+  font-family: "Alata", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
