@@ -45,9 +45,8 @@ const Header = () => {
             id='mainHeader'
             className={`w-full flex flex-col transition-transform duration-500 ease-in-out transform ${
                 showHeader ? 'translate-y-0' : '-translate-y-full'
-            } fixed top-0 left-0 z-20 bg-[var(--sky-blue)]`}
+            } sticky top-0 left-0 z-20 bg-[var(--sky-blue)]`}
         >
-            {/* Top bar for contact info */}
             <div className='w-full hidden lg:flex lg:justify-end bg-[var(--dark-blue)] px-[4%] py-[0.5%]'>
                 <a href='tel:+14165604783' className='flex items-center mr-6 text-[3rem] lg:text-[0.8rem] text-[var(--sky-blue)] border-b-[1px] border-[var(--sky-blue)] transition-transform duration-[0.3s] ease-in-out hover:scale-[1.1]'>
                     <Call className='text-[1.0rem] mr-2' /> 416-560-4783
@@ -57,13 +56,10 @@ const Header = () => {
                 </a>
             </div>
 
-            {/* Main header section */}
             <div className='w-full flex flex-row items-center justify-between py-[4%] lg:py-[1%] px-[4%]'>
                 <div className='w-fit p-0'>
                     <img src={Logo} className='w-[9rem] lg:w-[9rem]' alt='Zulu Payroll Services' />
                 </div>
-
-                {/* Desktop menu */}
                 <div className='hidden lg:flex lg:flex-row items-center w-fit h-fit my-auto' id='DesktopMenu'>
                     {Navigations.map((Menu) => (
                         <Link
@@ -76,7 +72,7 @@ const Header = () => {
                         </Link>
                     ))}
                     <button className='lg:text-[1.4rem] ml-[2rem] bg-[var(--dark-blue)] text-[var(--sky-blue)] px-[1rem] py-[0.3rem] rounded-xl mb-[0.075rem] transition-transform ease-in-out duration-[0.3s] hover:scale-[1.05]'>
-                        <HashLink smooth to="/#contact">
+                        <HashLink smooth to="/#contact-section">
                             Contact Us
                         </HashLink>
                     </button>
@@ -103,9 +99,7 @@ const Header = () => {
                         key={Menu.name}
                         to={Menu.href}
                         onClick={() => setMobileMenu(false)}
-                        className={`text-[1.3rem] text-[var(--dark-blue)] font-bold uppercase tracking-[1px] pb-[0.075rem] mb-[1rem] px-1 border-b-[2px] border-transparent w-fit ${
-                            presentLocation.pathname === Menu.href ? 'border-[var(--dark-red)]' : ''
-                        }`}
+                        className={`text-[1.3rem] text-[var(--dark-blue)] font-bold uppercase tracking-[1px] pb-[0.075rem] mb-[1rem] px-1 border-b-[2px] border-transparent w-fit`}
                     >
                         {Menu.name}
                     </Link>

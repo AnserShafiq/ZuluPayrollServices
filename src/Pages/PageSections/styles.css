@@ -1,15 +1,35 @@
 .fade-enter {
-    opacity: 0;
-  }
-  .fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
-  }
-  .fade-exit {
-    opacity: 1;
-  }
-  .fade-exit-active {
-    opacity: 0;
-    transition: opacity 300ms ease-in;
-  }
-  
+opacity: 0;
+}
+.fade-enter-active {
+opacity: 1;
+transition: opacity 100ms ease-in-out;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit-active {
+opacity: 0;
+transition: opacity 100ms ease-in-out;
+}
+.special-underline{
+    position: relative;
+}
+.special-underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #9b1b1b;
+    border-radius: 50px;
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1000px) {
+    .special-underline::before{
+        background-color: #00000000;
+        box-shadow: none;
+        width: 0%;
+        height: 0%;
+    }
+}

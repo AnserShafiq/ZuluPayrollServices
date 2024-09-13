@@ -6,6 +6,9 @@
   --dark-blue: #243144;
   --sky-blue: #F7FBFF;
   --dark-red:#8E1313;
+  --black: #000000;
+  --slider-btns-color-one: #c0c0c07e;
+  --slider-btns-color-two: #e7e7e7;
 }
 
 body {
