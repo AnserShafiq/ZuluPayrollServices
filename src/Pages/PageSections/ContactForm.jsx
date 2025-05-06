@@ -47,7 +47,7 @@ const ContactForm = () => {
         console.log(FormData);
     }
   return (
-    <div className='w-full min-h-[50vh] lg:min-h-[90.5vh]'>
+    <div className='w-full min-h-[50vh] lg:min-h-fit'>
         {
             submission ? (
                 <h2 className='text-[1.8rem] lg:text-[2rem] tracking-wider text-[var(--dark-blue)] font-bold'>Thank you for reaching us, will contact you back shortly</h2>

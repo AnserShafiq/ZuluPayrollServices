@@ -52,7 +52,7 @@ const HomeSection2 = () => {
       className='text-[1.5rem] lg:text-[1.8rem] uppercase font-extrabold tracking-wider mt-[5%] lg:mt-4 px-[1.5rem] py-[0.3rem] rounded-xl shadow-lg bg-[var(--dark-blue)] text-[var(--sky-blue)] transition-transform ease-in-out duration-[0.3s] hover:scale-[1.05]' 
       to='#contact-section'
       >
-        Get a qoute today
+        Get a quote today
       </HashLink>
     </div>
   );

@@ -12,10 +12,12 @@ const AboutSection3 = () => {
 
     <div className='w-full lg:w-[60%] flex flex-col text-center lg:text-left justify-center mt-[1rem] lg:mt-0 px-0 lg:px-10' >
         <h2 className="text-[1.9rem] leading-tight lg:text-[2.5rem] uppercase font-extrabold text-[var(--dark-blue)] mb-3">
-            Secure, Compliant, & Tailored Payroll Services
+        Exceptional Support for Your Payroll Journey
         </h2>
         <p className='text-[1.2rem] lg:text-[1.4rem] capitalize leading-tight lg:leading-normal tracking-normal text-[var(--dark-blue)]'>
-        At Zulu Payroll Services, we specialize in delivering tailored payroll services to meet the unique needs of businesses of all sizes. Our experienced team of payroll experts is dedicated to providing timely, compliant, and secure payroll solutions. We pride ourselves on offering a personal touch to ensure each client receives the highest level of service.
+        Zulu Payroll Services is committed to providing personalized support to each client. Our client-focused approach, driven by dedicated account managers, allows us to create tailored payroll solutions that address your specific challenges. We aim to develop long-term partnerships where clients feel valued throughout the process.
+
+
         </p>
     </div>
 

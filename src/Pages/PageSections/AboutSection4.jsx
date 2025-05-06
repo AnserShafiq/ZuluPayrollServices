@@ -8,8 +8,8 @@ const AboutSection4 = () => {
             <h2 className='text-[1.8rem] lg:text-[2rem] leading-tight lg:leading-normal lg:text-[2.2rem] uppercase font-extrabold text-[var(--dark-blue)] special-underline'>To Get in touch with us</h2>
             <ContactForm />
         </div>
-        <div className='w-full lg:w-[50%] min-h-[50vh] lg:min-h-[75vh]'>
-            <img className='h-[50vh] lg:h-[100%] w-[100%] object-cover object-right' src={Sidebanner} alt='Contact Section Home'/>
+        <div className='w-full lg:w-[50%] min-h-[50vh] lg:min-h-fit'>
+            <img className='h-[50vh] lg:h-[100%] 2xl:h-[800px] w-[100%] object-cover object-right' src={Sidebanner} alt='Contact Section Home'/>
         </div>
     </div>
   )
